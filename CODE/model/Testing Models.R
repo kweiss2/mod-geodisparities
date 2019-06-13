@@ -80,7 +80,7 @@ m5 <- inla(f1, family = 'nbinomial',
                                   cpo = TRUE,
                                   waic = TRUE,
                                   config = T))
-summary(m1)
+summary(m5)
 
 
 m6 <- inla(f2, family = 'nbinomial',
@@ -91,7 +91,7 @@ m6 <- inla(f2, family = 'nbinomial',
                                   cpo = TRUE, 
                                   waic = TRUE,
                                   config = T))
-summary(m2)
+summary(m6)
 
 m7 <- inla(f3, family = 'nbinomial',
            data = national_sf,
@@ -101,7 +101,7 @@ m7 <- inla(f3, family = 'nbinomial',
                                   cpo = TRUE, 
                                   waic = TRUE,
                                   config = T))
-summary(m3)
+summary(m7)
 
 m8 <- inla(f4, family = 'nbinomial',
            data = national_sf,
@@ -111,7 +111,7 @@ m8 <- inla(f4, family = 'nbinomial',
                                   cpo = TRUE, 
                                   waic = TRUE,
                                   config = T))
-summary(m4)
+summary(m8)
 
 
 # Compare models -------------------------------------------------------
